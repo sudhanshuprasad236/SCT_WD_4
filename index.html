@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel = "icon" href = "logo.png" type = "image/x-icon">
+    <script defer src="script.js"></script>
+    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <title>Login</title>
+  </head>
+  <body>
+      <!-- To-Do List -->
+    <nav class="navbar navbar-light" style="background-color: rgb(252, 209, 152);">
+        <div class="container-fluid justify-content-center">
+          <a class="navbar-brand" href="index.html">
+            <img src="logo.png" alt="" width="24" height="24" class="d-inline-block align-text-top">
+            To-Do List
+          </a>
+        </div>
+    </nav>
+    <!-- /To-Do List -->
+    <!-- Default -->
+    <div class="text-center py-5">
+      <button id="details" onclick="return details();">Fill details</button>
+    </div>
+    <!-- /Default -->
+    <!-- Login Form -->
+    <div class="col-6 container-sm border border-dark border-2" style="height:auto; width:40%; margin-top: 1%;">
+      <h2 class="text-center p-2"><ins>Login Form</ins></h2>
+      <form id="form" action="todolist.html" onsubmit="return valid(check);">
+        <div class="container" style="width:90%;">
+
+          <label><b>Username</b></label>
+          <input id ="name" name="name" type="text" placeholder="Enter Username" onkeyup ="valid();" required>
+          <label for="nameerror" id="nameerror"></label><br>
+
+          <label><b>Password</b></label>
+          <input id="password" name="password" type="password" placeholder="Enter Password" onkeyup="valid();" required>
+          <label for="passworderror" id="passworderror"></label><br>
+          <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+          </label>
+          <button id ="button" type="submit">Login</button>
+          <a href="#" class="text-center">Forgot password?</a>
+        </div>
+      </form>
+    </div>
+    <!-- /Login Form -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    </body>
+  </html>

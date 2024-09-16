@@ -1,0 +1,65 @@
+*{
+    font-family: "Lucida Console", Monaco, monospace;
+}
+body{
+    background-image : url("background.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.button_slide {
+    color: rgb(0, 0, 0);
+    padding: 15px 30px;
+    display: inline-block;
+    font-size: 20px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0 rgb(238, 185, 117);
+    -webkit-transition: ease-out 0.4s;
+    -moz-transition: ease-out 0.4s;
+    transition: ease-out 0.4s;
+    }
+    .slide_right:hover {
+    color: black;
+    box-shadow: inset 400px 0 0 0 rgb(238, 185, 117);
+    text-decoration: none;
+    }
+    .slide_left:hover {
+    color: black;
+    box-shadow: inset 400px 0 0 0 rgb(238, 185, 117);
+    text-decoration: none;
+    }
+
+    input[type=text], input[type=password] {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+    
+    #button {
+      background-color: rgb(252, 209, 152);
+      color: black;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+    }
+    #button:hover{
+      opacity: 40px;
+      box-shadow: inset 550px 0 0 0 rgb(238, 178, 101);
+      transition: ease-out 0.4s;
+      -webkit-transition: ease-out 0.4s;
+    -moz-transition: ease-out 0.4s;
+    }
+
+    
+    /* Change styles for span and cancel button on extra small screens */
+    @media screen and (max-width: 500px) {
+      .m{
+         display: absolute;
+         float: none;
+      }
+    }
